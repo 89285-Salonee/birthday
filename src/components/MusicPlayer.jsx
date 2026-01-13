@@ -58,25 +58,25 @@ const MusicPlayer = forwardRef((props, ref) => {
     },
   }));
 
-  useEffect(() => {
-    // Try to autoplay
-    const audio = audioRef.current;
-    if (audio) {
-      // Set volume
-      audio.volume = 0.5;
+  // useEffect(() => {
+  //   // Try to autoplay
+  //   const audio = audioRef.current;
+  //   if (audio) {
+  //     // Set volume
+  //     audio.volume = 0.5;
 
-      audio
-        .play()
-        .then(() => {
-          setIsPlaying(true);
-        })
-        .catch((error) => {
-          // Autoplay was prevented
-          console.log("Autoplay prevented:", error);
-          setIsPlaying(false);
-        });
-    }
-  }, []);
+  //     audio
+  //       .play()
+  //       .then(() => {
+  //         setIsPlaying(true);
+  //       })
+  //       .catch((error) => {
+  //         // Autoplay was prevented
+  //         console.log("Autoplay prevented:", error);
+  //         setIsPlaying(false);
+  //       });
+  //   }
+  // }, []);
 
   return (
     <>
