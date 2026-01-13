@@ -18,7 +18,15 @@ function Gallery({ isActive }) {
   //   { src: "/images/pic5.jpeg", alt: "Memory 5" },
   //   { src: "/images/pic6.jpeg", alt: "Memory 6" },
   // ];
-  const photos = [
+//   const photos = [
+//   { src: `${import.meta.env.BASE_URL}images/pic1.jpeg`, alt: "Memory 1" },
+//   { src: `${import.meta.env.BASE_URL}images/pic2.jpeg`, alt: "Memory 2" },
+//   { src: `${import.meta.env.BASE_URL}images/pic3.jpeg`, alt: "Memory 3" },
+//   { src: `${import.meta.env.BASE_URL}images/pic4.jpeg`, alt: "Memory 4" },
+//   { src: `${import.meta.env.BASE_URL}images/pic5.jpeg`, alt: "Memory 5" },
+//   { src: `${import.meta.env.BASE_URL}images/pic6.jpeg`, alt: "Memory 6" },
+// ];
+const photos = [
   { src: `${import.meta.env.BASE_URL}images/pic1.jpeg`, alt: "Memory 1" },
   { src: `${import.meta.env.BASE_URL}images/pic2.jpeg`, alt: "Memory 2" },
   { src: `${import.meta.env.BASE_URL}images/pic3.jpeg`, alt: "Memory 3" },
@@ -26,6 +34,7 @@ function Gallery({ isActive }) {
   { src: `${import.meta.env.BASE_URL}images/pic5.jpeg`, alt: "Memory 5" },
   { src: `${import.meta.env.BASE_URL}images/pic6.jpeg`, alt: "Memory 6" },
 ];
+
 
 
   // Reveal photos with GSAP when page becomes active
